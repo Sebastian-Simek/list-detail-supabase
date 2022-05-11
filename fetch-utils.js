@@ -8,3 +8,8 @@ export async function getCats() {
     return response.data;
 }
 
+export async function getCat(id) {
+    const response = await client.from('cats').select('*').match({ id: id }).single();
+    return response.data;
+}
+
