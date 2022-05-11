@@ -1,5 +1,7 @@
 // import functions and grab DOM elements
+import { getCats } from './fetch-utils.js';
 
+getCats();
 // let state
 
 // set event listeners 
