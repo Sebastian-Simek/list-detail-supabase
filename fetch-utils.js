@@ -5,7 +5,6 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getCats() {
     const response = await client.from('cats').select('*');
-    console.log(response);
     return response.data;
 }
 
