@@ -1,5 +1,8 @@
 export function renderCats(cat) {
     
+    const a = document.createElement('a');
+    a.href = `./cat-detail/?id=${cat.id}`;
+
     const div = document.createElement('div');
     div.classList.add('cats');
 
@@ -12,6 +15,7 @@ export function renderCats(cat) {
     const p = document.createElement('p');
     p.textContent = `${cat.name} is ${cat.age} years old and has a cuteness factor of ${cat.cuteness}`;
     
-    div.append(h2, img, p);
+    a.append(h2, img, p);
+    div.append(a);
     return div;
 }
