@@ -13,6 +13,7 @@
     padding: 25px;
     margin: 20px;
     justify-content: center;
+    filter: drop-shadow(10px 10px 10px #755d7f);
 }
 
 .cats img {
@@ -22,4 +23,10 @@
 }
 a {
     color: black;
+}
+
+h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #bad0e1;
+    background: linear-gradient(to right, rgb(92, 99, 154) 0%, rgb(246, 186, 246) 100%);
 }
