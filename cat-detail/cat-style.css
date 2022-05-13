@@ -1,0 +1,19 @@
+
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 800;
+}

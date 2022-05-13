@@ -1,8 +1,16 @@
 // import functions and grab DOM elements
+import { getCats } from './fetch-utils.js';
+import { renderCats } from './render-utils.js';
 
-// let state
+const catListContainer = document.querySelector('main');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+async function loadData() {
+    const cats = await getCats();
+
+    for (let cat of cats) {
+        const catDiv = renderCats(cat);
+        catListContainer.append(catDiv);
+    }
+}
+loadData();
+
