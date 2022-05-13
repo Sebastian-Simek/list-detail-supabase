@@ -27,12 +27,15 @@ export function renderCatPage(cat) {
     h2.textContent = cat.name;
 
     const img = document.createElement('img');
-    img.src = `.${cat.image}`;
+    img.src = `${cat.image}`;
     
     const p = document.createElement('p');
     p.textContent = `${cat.name} is ${cat.age} years old and has a cuteness factor of ${cat.cuteness}`;
+
+    const p1 = document.createElement('p');
+    p1.textContent = cat.extra;
     
-    div.append(h2, img, p);
+    div.append(h2, img, p, p1);
     return div;
 }
 
